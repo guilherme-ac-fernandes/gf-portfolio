@@ -1,7 +1,7 @@
 :root {
   --white: white;
-  --primary-color: #2626bc;
-  --second-color: #4369fd;
+  --primary-color: #7817ff;
+  --second-color: #a78aff;
   --third-color: #9fb0fe;
   --highlight: #fd7db8;
   --contrast: #97fed3;
@@ -30,14 +30,14 @@ header a:hover {
   color: var(--dark-purple);
 }
 
-header a {
+header nav a {
   display: block;
   position: relative;
   padding: 0.2em 0;
   overflow: hidden;
 }
 
-header a::after {
+header nav a::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -50,7 +50,7 @@ header a::after {
   transform: translate3d(-101%, 0, 0);
 }
 
-header a:hover::after {
+header nav a:hover::after {
   transform: translate3d(0, 0, 0);
 }
 

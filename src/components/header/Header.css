@@ -1,5 +1,5 @@
 header {
-  background-color: var(--dark-background);
+  background-color: var(--background);
   color: var(--white);
   display: flex;
   justify-content: space-between;
@@ -44,14 +44,14 @@ nav li {
 }
 
 .menu_hamburger {
-  color: var(--dark-purple);
+  color: var(--primary-color);
   display: none;
   cursor: pointer;
   font-size: 1.4rem;
 }
 
 #title a {
-  color: var(--dark-purple);
+  color: var(--primary-color);
 }
 
 #title a::after {
@@ -83,7 +83,7 @@ nav li {
   }
 
   nav {
-    background-color: var(--background);
+    /* background-color: var(--background); */
     width: 100%;
     overflow: hidden;
     max-height: 0;

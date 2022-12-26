@@ -6,6 +6,7 @@
   --highlight: #fd7db8;
   --contrast: #97fed3;
   --background: #090e35;
+  --background-contrast: #0f143f;
   --card-background: #181c3c;
   --card-hover: #222750;
 }
@@ -27,7 +28,7 @@ header a {
 }
 
 header a:hover {
-  color: var(--dark-purple);
+  color: var(--second-color);
 }
 
 header nav a {

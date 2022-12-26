@@ -3,6 +3,9 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 
 import './Header.css';
 
+// Estruturação do menu proveniente do código estruturado pela
+// Luá Octaviano, colega de Turma na Trybe
+// source: https://github.com/luacomacento/luacomacento.github.io/blob/main/src/components/header/Header.js
 function Header() {
   const [menuState, setMenuState] = useState<boolean>(false);
 

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import logoDev from '../../images/logo-dev.png';
 
 import './Header.css';
 
@@ -27,9 +28,10 @@ function Header() {
 
   return (
     <header>
-      <h1 id='title'>
-        <a href='/'>Guilherme Fernandes</a>
-      </h1>
+      <a href='/' className='header_wrapper'>
+        <img src={logoDev} alt='dev' className='header_logo' />
+        <p>Guilherme Fernandes</p>
+      </a>
 
       <div style={{ display: 'flex', gap: '16px' }}>
         <div onClick={toggleMenu}>
@@ -56,9 +58,10 @@ function Header() {
           <li>
             <a
               onClick={toggleMenu}
-              href='https://www.linkedin.com/in/guilherme-ac-fernandes/'
-              target='_blank'
-              rel='noreferrer'
+              href='#contact'
+              // href='https://www.linkedin.com/in/guilherme-ac-fernandes/'
+              // target='_blank'
+              // rel='noreferrer'
             >
               Contato
             </a>

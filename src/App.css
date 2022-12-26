@@ -1,16 +1,3 @@
-:root {
-  --white: white;
-  --primary-color: #7817ff;
-  --second-color: #a78aff;
-  --third-color: #9fb0fe;
-  --highlight: #fd7db8;
-  --contrast: #97fed3;
-  --background: #090e35;
-  --background-contrast: #0f143f;
-  --card-background: #181c3c;
-  --card-hover: #222750;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,6 +8,10 @@ body {
   background-color: var(--background);
   font-family: 'Courier New', Courier, monospace;
   color: var(--white);
+}
+
+.main {
+  margin-top: 150px;
 }
 
 header a {

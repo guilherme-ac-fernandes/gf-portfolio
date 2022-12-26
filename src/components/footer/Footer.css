@@ -1,0 +1,40 @@
+footer {
+  background-color: var(--dark-purple);
+  margin-top: 64px;
+  padding: 48px 32px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.accounts_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-icon {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  transition: 0.3s;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.social-icon:hover {
+  background-color: white;
+  color: var(--vibrant-purple)
+}
+
+.references {
+  font-size: 1.2rem;
+}

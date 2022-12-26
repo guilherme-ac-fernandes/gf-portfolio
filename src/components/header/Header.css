@@ -1,9 +1,9 @@
 header {
-  background-color: var(--background);
+  background-color: var(--background-contrast);
   color: var(--white);
   display: flex;
   justify-content: space-between;
-  padding: 16px 72px;
+  padding: 32px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -83,17 +83,17 @@ nav li {
   }
 
   nav {
-    /* background-color: var(--background); */
     width: 100%;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.3s;
+    transition: max-height 0.2s;
   }
 
   nav ul {
     flex-direction: column;
     height: 100vh;
-    justify-content: center;
+    margin-top: 50%;
+    gap: 10%;
   }
 }
 

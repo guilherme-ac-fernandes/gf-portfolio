@@ -1,12 +1,9 @@
 footer {
   background-color: var(--background-contrast);
-  /* margin-top: 64px; */
+  margin-top: 64px;
   padding: 32px;
   align-items: center;
   text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   display: flex;
   flex-direction: column;
   gap: 24px;

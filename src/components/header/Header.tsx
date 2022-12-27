@@ -15,7 +15,7 @@ function Header() {
   }
 
   useEffect(() => {
-    const nav = document.querySelector<HTMLInputElement>('nav');
+    const nav = document.querySelector<HTMLDivElement>('nav');
 
     if (nav != null) {
       if (menuState) {

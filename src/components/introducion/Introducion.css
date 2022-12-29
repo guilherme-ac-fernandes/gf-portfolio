@@ -1,0 +1,4 @@
+.introducion_container {
+  margin: var(--margin-section);
+  padding-top: var(--header-height);
+}

@@ -1,4 +1,41 @@
 .introducion_container {
   margin: var(--margin-section);
   padding-top: var(--header-height);
+  /* background-color: red; */
+  padding-inline: 48px;
+}
+
+.introducion_container div p:nth-child(1) {
+  font-size: 2rem;
+}
+
+.introducion_container div p:nth-child(2) {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
+
+.introducion_container ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  padding: 8px;
+}
+
+.introducion_container ul li img {
+  width: 40px;
+  height: 40px;
+}
+
+button {
+  background-color: var(-white);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  border: 2px solid white;
+  border-radius: 18px;
+  width: 150px;
+  color: black;
 }

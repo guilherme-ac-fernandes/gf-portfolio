@@ -2,16 +2,10 @@
   margin-block: 24px;
 }
 
-.project_container_title {
-  text-align: center;
-  text-transform: uppercase;
-  padding-block: 32px;
-}
-
 .project_container ul {
   align-items: center;
   gap: 24px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   display: flex;
   flex-wrap: wrap;
 }

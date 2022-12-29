@@ -1,0 +1,11 @@
+.section_title {
+  padding-block: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.section_title h2 {
+  text-transform: uppercase;
+}

@@ -51,13 +51,13 @@ function Header() {
             </a>
           </li>
           <li>
-            <a onClick={toggleMenu} href='#projects'>
-              Projetos
+            <a onClick={toggleMenu} href='#tools'>
+              Ferramentas
             </a>
           </li>
           <li>
-            <a onClick={toggleMenu} href='#tools'>
-              Ferramentas
+            <a onClick={toggleMenu} href='#projects'>
+              Projetos
             </a>
           </li>
           <li>

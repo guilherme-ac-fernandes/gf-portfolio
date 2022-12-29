@@ -56,6 +56,11 @@ function Header() {
             </a>
           </li>
           <li>
+            <a onClick={toggleMenu} href='#tools'>
+              Ferramentas
+            </a>
+          </li>
+          <li>
             <a
               onClick={toggleMenu}
               href='#contact'

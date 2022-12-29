@@ -11,9 +11,8 @@ export default function ProjectDisplay({ project }: ProjectDisplayProps) {
   return (
     <div className='project_display'>
       <img src={project.image} alt={project.name} />
-      <h3>{project.name}</h3>
-      <aside className='project_display_aside'>
-        <p className={`project_module ${project.module}`}>{project.module}</p>
+      <div className='project_display_div'>
+        <h3>{project.name}</h3>
         <div>
           <a href={project.codeUrl} target='_blank' rel='noreferrer'>
             <FaGithub />
@@ -24,8 +23,9 @@ export default function ProjectDisplay({ project }: ProjectDisplayProps) {
             </a>
           )}
         </div>
-      </aside>
+      </div>
       <p className='project_display_description'>{project.description}</p>
+      <p className={`project_module ${project.module}`}>{project.module}</p>
       {/* <ul>
         {project.skills.map((skill, index) => (
           <li key={`${project.name}-${index}`}>{skill}</li>

@@ -1,5 +1,6 @@
 .tools_container {
-  margin: 48px;
+  margin: var(--margin-section);
+  padding-top: var(--header-height);
 }
 
 .tools_container_display {

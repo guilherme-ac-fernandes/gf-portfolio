@@ -5,10 +5,10 @@ const IMAGE_PATH = './projects';
 
 const projects: Project[] = [
   {
-    name: 'Harry Potter Characters 🪄🧙🏻‍♂️',
+    name: 'List Characters 🪄🧙🏻‍♂️',
     image: `${IMAGE_PATH}/harrypotter.png`,
     description:
-      'Aplicação FullStack para criação e listagem de personagens presentes na franquia Harry Potter.',
+      'Aplicação FullStack para criação e listagem de personagens presentes na franquia Harry Potter e suas as respectivas casas em Hogwarts.',
     skills: [
       'react',
       'context api',
@@ -24,10 +24,10 @@ const projects: Project[] = [
     module: 'fullstack',
   },
   {
-    name: 'Trivia 👾🎮',
+    name: 'Trivia Game 👾🎮',
     image: `${IMAGE_PATH}/trivia.png`,
     description:
-      'Aplicação web construída em grupo, que consiste em um jogo de perguntas e respostas.',
+      'Aplicação web construída em grupo, que consiste em um jogo de perguntas e respostas. Podendo configurar as categorias, dificuldade e tipo das perguntas.',
     skills: ['react', 'redux', 'css'],
     codeUrl: `${GITHUB_URL}/trivia`,
     deployUrl: 'https://trivia-pink.vercel.app/',
@@ -37,7 +37,7 @@ const projects: Project[] = [
     name: 'Blogs API 📝🗒',
     image: `${IMAGE_PATH}/blog.png`,
     description:
-      'Consiste em uma API de banco de dados para produção de conteúdo para um blog.',
+      'Consiste em uma API de banco de dados para produção de conteúdo para um blog. Validando os dados do usuário, juntamente com a possibilidade de criar, visualizar, deletar e atualizar as postagens.',
     skills: ['node.js', 'express', 'sequelize', 'mysql', 'docker'],
     codeUrl: `${GITHUB_URL}/blogs-api`,
     module: 'backend',
@@ -46,7 +46,7 @@ const projects: Project[] = [
     name: 'Trybe Futebol Clube ⚽️🏆',
     image: `${IMAGE_PATH}/tfc.png`,
     description:
-      'A partir de uma aplicação FrontEnd desenvolvida pela Trybe, foi desenvolvido uma API para prover as informações necessárias para um site informativo sobre partidas e classificações de futebol.',
+      'A partir do FrontEnd desenvolvido pela Trybe, foi construído uma API para prover informações para um site informativo sobre partidas e classificações de futebol.',
     skills: [
       'node.js',
       'express',
@@ -68,7 +68,7 @@ const projects: Project[] = [
     module: 'fullstack',
   },
   {
-    name: 'Star Wars Planet Search 🪐🌎',
+    name: 'Planet Search 🪐🌎',
     image: `${IMAGE_PATH}/starwars-planets-search.png`,
     description:
       'Aplicação web construída para busca dos planetas presentes na franquia Star Wars.',

@@ -6,6 +6,11 @@
   justify-content: center;
   gap: 12px;
 }
+
 .section_title h2 {
   text-transform: uppercase;
+}
+
+.section_title p {
+  text-align: center;
 }

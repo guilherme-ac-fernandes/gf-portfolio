@@ -1,0 +1,27 @@
+.contact_container {
+  margin: var(--margin-section);
+  padding-top: var(--header-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_container form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 12px;
+}
+
+.contact_container form input,
+.contact_container form textarea {
+  padding: 12px;
+  font-family: 'Andika', sans-serif;
+  border-radius: 8px;
+}
+
+.contact_container form textarea {
+  resize: none;
+  height: 120px;
+}

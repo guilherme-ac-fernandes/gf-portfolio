@@ -1,4 +1,9 @@
 .bighead {
-  min-width: 350px;
-  max-width: 600px;
+  width: 350px;
+}
+
+@media screen and (max-width: 500px) {
+  .bighead {
+    width: 200px;
+  }
 }

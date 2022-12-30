@@ -8,6 +8,7 @@ const SET_TIME = 2000;
 export default function Introducion() {
   return (
     <section id='introducion' className='introducion_container'>
+      <BigHeadComponent />
       <div>
         <p>Oi, meu nome é</p>
         <p>Guilherme Fernandes</p>
@@ -27,11 +28,10 @@ export default function Introducion() {
           wrapper='div'
           cursor={true}
           repeat={Infinity}
-          style={{ fontSize: '1.8rem' }}
+          style={{ fontSize: '1.4rem' }}
         />
         <button className='introducion_button'>Adicionar algo</button>
       </div>
-      <BigHeadComponent />
     </section>
   );
 }

@@ -1,3 +1,4 @@
+import about_me from '../../data/about_me';
 import SectionTitle from '../section_title/SectionTitle';
 
 import './About.css';
@@ -8,12 +9,23 @@ export default function About() {
       <SectionTitle title='Sobre Mim' />
       <div className='about_container_content'>
         <img src='./profile/profile.png' alt='Guilherme Fernandes' />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam,
-          qui perferendis, culpa hic necessitatibus consectetur officiis dicta
-          maxime ex reprehenderit soluta, tempora rerum numquam molestias
-          tenetur in blanditiis ad?
-        </p>
+        <div>
+          <p>
+            Sou Desenvolvedor Web Full Stack, morando em Contagem/MG. Através
+            dos meus estudos na Trybe, apaixonei por back-end e atualmente
+            estou estudando sobre Node.js, Typescript, MongoDB e Python.
+            <br />
+            Algumas curiosidades sobre mim:
+          </p>
+          <ul>
+            {about_me.map((item, index) => (
+              <li key={index}>
+                <img src={item.imageUrl} alt={item.description} />
+                <span>{item.description}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );

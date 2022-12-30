@@ -1,4 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
+import BigHeadComponent from '../big_head/BigHeadComponent';
 import './Introducion.css';
 
 const PHRASE = 'Eu programo';
@@ -28,8 +29,9 @@ export default function Introducion() {
           repeat={Infinity}
           style={{ fontSize: '1.8rem' }}
         />
+        <button className='introducion_button'>Adicionar algo</button>
       </div>
-      <button className='introducion_button'>Currículo</button>
+      <BigHeadComponent />
     </section>
   );
 }

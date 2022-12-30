@@ -12,8 +12,8 @@ export default function About() {
         <div>
           <p>
             Sou Desenvolvedor Web Full Stack, morando em Contagem/MG. Através
-            dos meus estudos na Trybe, apaixonei por back-end e atualmente
-            estou estudando sobre Node.js, Typescript, MongoDB e Python.
+            dos meus estudos na Trybe, apaixonei por back-end e atualmente estou
+            estudando sobre Node.js, Typescript, MongoDB e Python.
             <br />
             Algumas curiosidades sobre mim:
           </p>

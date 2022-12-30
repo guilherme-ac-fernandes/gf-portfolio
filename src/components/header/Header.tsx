@@ -30,7 +30,6 @@ function Header() {
     <header>
       <a href='/' className='header_wrapper'>
         <img src={logoDev} alt='dev' className='header_logo' />
-        <p>Guilherme Fernandes</p>
       </a>
 
       <div style={{ display: 'flex', gap: '16px' }}>

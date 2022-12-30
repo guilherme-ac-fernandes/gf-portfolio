@@ -9,20 +9,12 @@ header {
   top: 0;
   width: 100%;
   z-index: 2;
+  padding-inline: 48px;
 }
 
 .header_wrapper {
   display: flex;
-  color: var(--white);
   align-items: center;
-  justify-content: space-evenly;
-  width: 35%;
-  gap: 10px;
-}
-
-.header_wrapper p {
-  font-size: 1.8rem;
-  font-weight: 600;
 }
 
 .header_logo {
@@ -70,7 +62,6 @@ nav li {
     display: flex;
     color: var(--white);
     align-items: center;
-    justify-content: space-evenly;
     width: 55%;
     gap: 10px;
   }

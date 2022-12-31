@@ -49,3 +49,14 @@
   width: 40px;
   height: 40px;
 }
+
+@media screen and (max-width: 500px) {
+  .about_container_content ul li {
+    font-size: 1.1rem;
+  }
+
+  .about_container_content ul li img {
+    width: 30px;
+    height: 30px;
+  }
+}

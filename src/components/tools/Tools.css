@@ -6,7 +6,13 @@
 .tools_container_display {
   align-items: center;
   display: flex;
-  margin-inline: auto;
+  margin: 40px auto;
   overflow-x: auto;
   width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .tools_container_display {
+    width: 100%
+  }
 }

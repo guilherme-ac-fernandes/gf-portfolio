@@ -1,13 +1,13 @@
 .tools_display {
   background-color: var(--card-background);
   width: 200px;
-  height: 150px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 8px;
-  padding: 50px;
+  padding: 60px;
   border-radius: 16px;
   margin: 10px;
 }

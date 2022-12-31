@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutData from '../../data/aboutData'
+import about from '../../data/about'
 
 import SectionTitle from '../section_title/SectionTitle'
 
@@ -20,7 +20,7 @@ export default function About() {
             Algumas curiosidades sobre mim:
           </p>
           <ul>
-            {aboutData.map((item) => (
+            {about.map((item) => (
               <li key={item.description}>
                 <img src={item.imageUrl} alt={item.description} />
                 <span>{item.description}</span>

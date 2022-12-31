@@ -2,7 +2,7 @@ import AboutMe from '../interfaces/aboutMe';
 
 const IMAGE_PATH = './profile';
 
-const AboutData: AboutMe[] = [
+const about: AboutMe[] = [
   {
     description: 'Nintendista',
     imageUrl: `${IMAGE_PATH}/nintendo.png`,
@@ -17,4 +17,4 @@ const AboutData: AboutMe[] = [
   },
 ];
 
-export default AboutData;
+export default about;

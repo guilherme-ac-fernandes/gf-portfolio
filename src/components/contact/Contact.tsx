@@ -1,5 +1,4 @@
 import React from 'react'
-
 import SectionTitle from '../section_title/SectionTitle'
 
 import './Contact.css'

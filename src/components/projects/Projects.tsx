@@ -1,5 +1,4 @@
 import React from 'react'
-
 import projects from '../../data/projects'
 import ProjectDisplay from '../project_display/ProjectDisplay'
 import SectionTitle from '../section_title/SectionTitle'

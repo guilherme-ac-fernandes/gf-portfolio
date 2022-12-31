@@ -1,8 +1,8 @@
 /* eslint-disable no-alert */
 import React from 'react'
 import { FaFileDownload, FaLinkedinIn } from 'react-icons/fa'
-import { LINKEDIN_LINK } from '../../data/links'
 import BigHeadComponent from '../big_head/BigHeadComponent'
+import { LINKEDIN_LINK } from '../../data/links'
 import Type from './Type'
 
 import './Introducion.css'

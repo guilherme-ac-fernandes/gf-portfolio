@@ -1,8 +1,8 @@
 import React from 'react'
-
 import tools from '../../data/tools'
 import SectionTitle from '../section_title/SectionTitle'
 import ToolsDisplay from '../tools_display/ToolsDisplay'
+
 import './Tools.css'
 
 export default function Tools() {

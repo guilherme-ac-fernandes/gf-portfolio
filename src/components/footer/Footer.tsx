@@ -1,7 +1,15 @@
 import React from 'react'
+import {
+  FaEnvelope,
+  FaGithubAlt,
+  FaLinkedinIn,
+} from 'react-icons/fa'
+import {
+  GITHUB_LINK,
+  LINKEDIN_LINK,
+  MAILTO_EMAIL_LINK,
+} from '../../data/links'
 
-import { FaEnvelope, FaGithubAlt, FaLinkedinIn } from 'react-icons/fa'
-import { GITHUB_LINK, LINKEDIN_LINK, MAILTO_EMAIL_LINK } from '../../data/links'
 import './Footer.css'
 
 export default function Footer() {

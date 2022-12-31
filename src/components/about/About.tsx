@@ -1,7 +1,6 @@
 import React from 'react'
-import about from '../../data/about'
-
 import SectionTitle from '../section_title/SectionTitle'
+import about from '../../data/about'
 
 import './About.css'
 

@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 import Project from '../../interfaces/project'
 

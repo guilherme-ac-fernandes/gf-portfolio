@@ -1,6 +1,6 @@
 import React from 'react'
-
 import { BigHead } from '@bigheads/core'
+
 import './BigHeadComponent.css'
 
 export default function BigHeadComponent() {

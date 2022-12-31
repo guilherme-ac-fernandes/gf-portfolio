@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Tools from '../../interfaces/tools'
 
 import './ToolsDisplay.css'

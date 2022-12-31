@@ -1,6 +1,6 @@
 .introducion_container {
   margin: var(--margin-section);
-  padding-top: var(--header-height);
+  padding-block: var(--header-height);
   padding-inline: 48px;
   display: flex;
   align-items: center;

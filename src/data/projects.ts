@@ -8,7 +8,7 @@ const projects: Project[] = [
     name: 'List Characters 🪄🧙🏻‍♂️',
     image: `${IMAGE_PATH}/harrypotter.png`,
     description:
-      'Aplicação FullStack para criação e listagem de personagens presentes na franquia Harry Potter e suas as respectivas casas em Hogwarts.',
+      'Aplicação FullStack para criação e listagem de personagens da franquia Harry Potter e suas casas em Hogwarts.',
     skills: [
       'react',
       'context api',
@@ -27,7 +27,7 @@ const projects: Project[] = [
     name: 'Trivia Game 👾🎮',
     image: `${IMAGE_PATH}/trivia.png`,
     description:
-      'Aplicação web construída em grupo, que consiste em um jogo de perguntas e respostas. Podendo configurar as categorias, dificuldade e tipo das perguntas.',
+      'Aplicação web construída em grupo, que consiste em um jogo de perguntas e respostas. Podendo configurar categoria, dificuldade e tipo das perguntas.',
     skills: ['react', 'redux', 'css'],
     codeUrl: `${GITHUB_URL}/trivia`,
     deployUrl: 'https://trivia-pink.vercel.app/',
@@ -37,7 +37,7 @@ const projects: Project[] = [
     name: 'Blogs API 📝🗒',
     image: `${IMAGE_PATH}/blog.png`,
     description:
-      'Consiste em uma API de banco de dados para produção de conteúdo para um blog. O usuário validado tem a possibilidade de criar, visualizar, deletar e atualizar as postagens.',
+      'Consiste em uma API para produção de conteúdo para um blog. O usuário tem a possibilidade de criar, visualizar, deletar e atualizar as postagens.',
     skills: ['node.js', 'express', 'sequelize', 'mysql', 'docker'],
     codeUrl: `${GITHUB_URL}/blogs-api`,
     module: 'backend',
@@ -46,7 +46,7 @@ const projects: Project[] = [
     name: 'Trybe Futebol Clube ⚽️🏆',
     image: `${IMAGE_PATH}/tfc.png`,
     description:
-      'A partir do FrontEnd desenvolvido pela Trybe, foi construído uma API disponibilizar as informações de um site sobre partidas e classificações de futebol.',
+      'A partir do FrontEnd criado pela Trybe, foi construído uma API para prover as informações de um site sobre partidas e classificações de futebol.',
     skills: [
       'node.js',
       'express',
@@ -81,7 +81,7 @@ const projects: Project[] = [
     name: 'Store Manager 📦📦',
     image: `${IMAGE_PATH}/store.png`,
     description:
-      'Consiste em uma API construída para o gerenciamento de um e-commerce de produtos, com a possibilidade de criar, visualizar, deletar e atualizar produtos e vendas.',
+      'Consiste em uma API para o gerenciamento de um e-commerce, com a possibilidade de criar, visualizar, deletar e atualizar produtos e vendas.',
     skills: ['node.js', 'express', 'mysql', 'docker'],
     codeUrl: `${GITHUB_URL}/store-manager`,
     module: 'backend',

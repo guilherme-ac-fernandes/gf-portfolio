@@ -8,7 +8,7 @@
   width: 40%;
   min-width: 350px;
   position: relative;
-  height: 500px;
+  height: 450px;
 }
 
 .project_display:hover {
@@ -77,7 +77,7 @@
 }
 
 .frontend {
-  background-color: #b855a7;
+  background-color: #ae5aa0;
 }
 
 .fullstack {
@@ -89,4 +89,5 @@
   text-align: justify;
   text-justify: inter-word;
   line-height: 30px;
+  font-size: 1rem;
 }

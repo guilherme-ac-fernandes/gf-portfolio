@@ -37,7 +37,7 @@ const projects: Project[] = [
     name: 'Blogs API 📝🗒',
     image: `${IMAGE_PATH}/blog.png`,
     description:
-      'Consiste em uma API de banco de dados para produção de conteúdo para um blog. Validando os dados do usuário, juntamente com a possibilidade de criar, visualizar, deletar e atualizar as postagens.',
+      'Consiste em uma API de banco de dados para produção de conteúdo para um blog. O usuário validado tem a possibilidade de criar, visualizar, deletar e atualizar as postagens.',
     skills: ['node.js', 'express', 'sequelize', 'mysql', 'docker'],
     codeUrl: `${GITHUB_URL}/blogs-api`,
     module: 'backend',
@@ -46,7 +46,7 @@ const projects: Project[] = [
     name: 'Trybe Futebol Clube ⚽️🏆',
     image: `${IMAGE_PATH}/tfc.png`,
     description:
-      'A partir do FrontEnd desenvolvido pela Trybe, foi construído uma API para prover informações para um site informativo sobre partidas e classificações de futebol.',
+      'A partir do FrontEnd desenvolvido pela Trybe, foi construído uma API disponibilizar as informações de um site sobre partidas e classificações de futebol.',
     skills: [
       'node.js',
       'express',
@@ -108,7 +108,7 @@ const projects: Project[] = [
     name: 'App de Delivery 🍺🍸',
     image: `${IMAGE_PATH}/delivery-app.png`,
     description:
-      'Aplicação web full construída em grupo, aonde foi desenvolvido um sistema de delivery para uma distribuidora de bebidas, contendo as rotas de clientes, vendedores e admistrador.',
+      'Aplicação web full construída em grupo que consiste em sistema de delivery para uma distribuidora de bebidas.',
     skills: [
       'react',
       'context api',

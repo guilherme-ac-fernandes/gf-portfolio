@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { FaEnvelope, FaGithubAlt, FaLinkedinIn } from 'react-icons/fa'
+import { GITHUB_LINK, LINKEDIN_LINK, MAILTO_EMAIL_LINK } from '../../data/links'
 import './Footer.css'
 
 export default function Footer() {
@@ -9,7 +10,7 @@ export default function Footer() {
       <div className="accounts_wrapper">
         <a
           className="accounts_link"
-          href="https://www.linkedin.com/in/guilherme-ac-fernandes/"
+          href={LINKEDIN_LINK}
           target="_blank"
           rel="noreferrer"
         >
@@ -17,7 +18,7 @@ export default function Footer() {
         </a>
         <a
           className="accounts_link"
-          href="https://github.com/guilherme-ac-fernandes"
+          href={GITHUB_LINK}
           target="_blank"
           rel="noreferrer"
         >
@@ -25,7 +26,7 @@ export default function Footer() {
         </a>
         <a
           className="accounts_link"
-          href="mailto:gfengquimica@gmail.com"
+          href={MAILTO_EMAIL_LINK}
           target="_blank"
           rel="noreferrer"
         >

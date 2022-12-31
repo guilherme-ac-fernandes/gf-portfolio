@@ -20,6 +20,7 @@
   padding: 12px;
   font-family: 'Andika', sans-serif;
   border-radius: 8px;
+  font-size: 1rem;
 }
 
 .contact_container form textarea {
@@ -33,10 +34,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   border: 2px solid white;
   border-radius: 18px;
-  width: 250px;
+  width: 160px;
   color: black;
   margin: 18px auto 0;
   color: var(--white);

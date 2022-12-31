@@ -1,15 +1,11 @@
 /* eslint-disable no-alert */
 import React from 'react'
-
-import { TypeAnimation } from 'react-type-animation'
 import { FaFileDownload, FaLinkedinIn } from 'react-icons/fa'
+import { LINKEDIN_LINK } from '../../data/links'
 import BigHeadComponent from '../big_head/BigHeadComponent'
+import Type from './Type'
 
 import './Introducion.css'
-import { LINKEDIN_LINK } from '../../data/links'
-
-const PHRASE = 'Eu programo'
-const SET_TIME = 2000
 
 export default function Introducion() {
   const handleResume = () => {
@@ -23,23 +19,7 @@ export default function Introducion() {
         <p>Oi, meu nome é</p>
         <p>Guilherme Fernandes</p>
         <p>Desenvolvedor Web Full Stack</p>
-        <TypeAnimation
-          sequence={[
-            `${PHRASE} em JavaScript..`,
-            SET_TIME,
-            `${PHRASE} em TypeScript..`,
-            SET_TIME,
-            `${PHRASE} em Python..`,
-            SET_TIME,
-            `${PHRASE} para você!!`,
-            SET_TIME,
-          ]}
-          className="introducion_animation"
-          wrapper="div"
-          cursor
-          repeat={Infinity}
-          style={{ fontSize: '1.2rem' }}
-        />
+        <Type />
         <aside>
           <a
             className="introducion_button"

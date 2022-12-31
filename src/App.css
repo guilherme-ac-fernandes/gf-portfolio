@@ -6,15 +6,9 @@
 
 body {
   background-color: var(--background);
-  /* font-family: 'Inter', sans-serif; */
-  /* font-family: 'Andika', sans-serif; */
   font-family: 'Poppins', sans-serif;
   color: var(--white);
   font-size: 1.2rem;
-}
-
-.main {
-  margin-top: 100px;
 }
 
 a {
@@ -52,4 +46,10 @@ header nav a:hover::after {
 
 ul {
   list-style: none;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    margin-top: 100px;
+  }
 }

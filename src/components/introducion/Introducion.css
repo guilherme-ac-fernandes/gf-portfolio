@@ -65,4 +65,8 @@
     margin: 0px;
     padding-block: 0px;
   }
+
+  .introducion_container div p:nth-child(2) {
+    font-size: 1.8rem;
+  }
 }

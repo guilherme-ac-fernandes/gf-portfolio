@@ -30,7 +30,7 @@ export default function Introducion() {
           wrapper="div"
           cursor
           repeat={Infinity}
-          style={{ fontSize: '1.4rem' }}
+          style={{ fontSize: '1.3rem' }}
         />
         <button className="introducion_button" type="button">
           Adicionar algo

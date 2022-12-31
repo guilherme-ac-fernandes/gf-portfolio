@@ -2,10 +2,11 @@
 import React from 'react'
 
 import { TypeAnimation } from 'react-type-animation'
-import { FaFileDownload } from 'react-icons/fa'
+import { FaFileDownload, FaLinkedinIn } from 'react-icons/fa'
 import BigHeadComponent from '../big_head/BigHeadComponent'
 
 import './Introducion.css'
+import { LINKEDIN_LINK } from '../../data/links'
 
 const PHRASE = 'Eu programo'
 const SET_TIME = 2000
@@ -39,14 +40,25 @@ export default function Introducion() {
           repeat={Infinity}
           style={{ fontSize: '1.2rem' }}
         />
-        <button
-          onClick={handleResume}
-          className="introducion_button"
-          type="button"
-        >
-          Currículo
-          <FaFileDownload />
-        </button>
+        <aside>
+          <a
+            className="introducion_button"
+            href={LINKEDIN_LINK}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Linkedin
+            <FaLinkedinIn />
+          </a>
+          <button
+            onClick={handleResume}
+            className="introducion_button"
+            type="button"
+          >
+            Currículo
+            <FaFileDownload />
+          </button>
+        </aside>
       </div>
     </section>
   )

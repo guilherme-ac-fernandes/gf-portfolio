@@ -37,7 +37,7 @@ export default function Introducion() {
           wrapper="div"
           cursor
           repeat={Infinity}
-          style={{ fontSize: '1.3rem' }}
+          style={{ fontSize: '1.2rem' }}
         />
         <button
           onClick={handleResume}

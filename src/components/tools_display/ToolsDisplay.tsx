@@ -1,6 +1,8 @@
-import Tools from '../../interfaces/tools';
+import React from 'react'
 
-import './ToolsDisplay.css';
+import Tools from '../../interfaces/tools'
+
+import './ToolsDisplay.css'
 
 interface ToolsDisplayProps {
   tool: Tools;
@@ -8,9 +10,9 @@ interface ToolsDisplayProps {
 
 export default function ToolsDisplay({ tool }: ToolsDisplayProps) {
   return (
-    <div className='tools_display'>
+    <div className="tools_display">
       <img src={tool.imageUrl} alt={tool.name} />
       <h3>{tool.name}</h3>
     </div>
-  );
+  )
 }

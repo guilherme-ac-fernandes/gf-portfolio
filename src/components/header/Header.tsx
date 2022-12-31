@@ -1,43 +1,44 @@
-import { useEffect, useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import logoDev from '../../images/logo-dev.png';
+import React, { useEffect, useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import logoDev from '../../images/logo-dev.png'
 
-import './Header.css';
+import './Header.css'
 
 // Estruturação do menu proveniente do código estruturado pela
 // Luá Octaviano, colega de Turma na Trybe
-// source: https://github.com/luacomacento/luacomacento.github.io/blob/main/src/components/header/Header.js
+// source: https://github.com/luacomacento/luacomacento.github.io
+// /blob/main/src/components/header/Header.js
 function Header() {
-  const [menuState, setMenuState] = useState<boolean>(false);
+  const [menuState, setMenuState] = useState<boolean>(false)
 
   function toggleMenu() {
-    setMenuState(!menuState);
+    setMenuState(!menuState)
   }
 
   useEffect(() => {
-    const nav = document.querySelector<HTMLDivElement>('nav');
+    const nav = document.querySelector<HTMLDivElement>('nav')
 
     if (nav != null) {
       if (menuState) {
-        nav.style.maxHeight = '100vh';
+        nav.style.maxHeight = '100vh'
       } else {
-        nav.style.maxHeight = '';
+        nav.style.maxHeight = ''
       }
     }
-  }, [menuState]);
+  }, [menuState])
 
   return (
     <header>
-      <a href='/' className='header_wrapper'>
-        <img src={logoDev} alt='dev' className='header_logo' />
+      <a href="/" className="header_wrapper">
+        <img src={logoDev} alt="dev" className="header_logo" />
       </a>
 
       <div style={{ display: 'flex', gap: '16px' }}>
         <div onClick={toggleMenu}>
           {!menuState ? (
-            <FaBars className='menu_hamburger' />
+            <FaBars className="menu_hamburger" />
           ) : (
-            <FaTimes className='menu_hamburger' />
+            <FaTimes className="menu_hamburger" />
           )}
         </div>
       </div>
@@ -45,24 +46,24 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <a onClick={toggleMenu} href='#about'>
+            <a onClick={toggleMenu} href="#about">
               Sobre
             </a>
           </li>
           <li>
-            <a onClick={toggleMenu} href='#tools'>
+            <a onClick={toggleMenu} href="#tools">
               Ferramentas
             </a>
           </li>
           <li>
-            <a onClick={toggleMenu} href='#projects'>
+            <a onClick={toggleMenu} href="#projects">
               Projetos
             </a>
           </li>
           <li>
             <a
               onClick={toggleMenu}
-              href='#contact'
+              href="#contact"
               // href='https://www.linkedin.com/in/guilherme-ac-fernandes/'
               // target='_blank'
               // rel='noreferrer'
@@ -73,7 +74,7 @@ function Header() {
         </ul>
       </nav>
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header

@@ -1,13 +1,15 @@
-import { TypeAnimation } from 'react-type-animation';
-import BigHeadComponent from '../big_head/BigHeadComponent';
-import './Introducion.css';
+import React from 'react'
 
-const PHRASE = 'Eu programo';
-const SET_TIME = 2000;
+import { TypeAnimation } from 'react-type-animation'
+import BigHeadComponent from '../big_head/BigHeadComponent'
+import './Introducion.css'
+
+const PHRASE = 'Eu programo'
+const SET_TIME = 2000
 
 export default function Introducion() {
   return (
-    <section id='introducion' className='introducion_container'>
+    <section id="introducion" className="introducion_container">
       <BigHeadComponent />
       <div>
         <p>Oi, meu nome é</p>
@@ -24,14 +26,16 @@ export default function Introducion() {
             `${PHRASE} para você!!`,
             SET_TIME,
           ]}
-          className='introducion_animation'
-          wrapper='div'
-          cursor={true}
+          className="introducion_animation"
+          wrapper="div"
+          cursor
           repeat={Infinity}
           style={{ fontSize: '1.4rem' }}
         />
-        <button className='introducion_button'>Adicionar algo</button>
+        <button className="introducion_button" type="button">
+          Adicionar algo
+        </button>
       </div>
     </section>
-  );
+  )
 }

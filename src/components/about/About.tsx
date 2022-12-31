@@ -1,14 +1,16 @@
-import about_me from '../../data/about_me';
-import SectionTitle from '../section_title/SectionTitle';
+import React from 'react'
+import aboutMe from '../../data/aboutMe'
 
-import './About.css';
+import SectionTitle from '../section_title/SectionTitle'
+
+import './About.css'
 
 export default function About() {
   return (
-    <section id='about' className='about_container'>
-      <SectionTitle title='Sobre Mim' />
-      <div className='about_container_content'>
-        <img src='./profile/profile.png' alt='Guilherme Fernandes' />
+    <section id="about" className="about_container">
+      <SectionTitle title="Sobre Mim" />
+      <div className="about_container_content">
+        <img src="./profile/profile.png" alt="Guilherme Fernandes" />
         <div>
           <p>
             Sou Desenvolvedor Web Full Stack, morando em Contagem/MG. Através
@@ -18,8 +20,8 @@ export default function About() {
             Algumas curiosidades sobre mim:
           </p>
           <ul>
-            {about_me.map((item, index) => (
-              <li key={index}>
+            {aboutMe.map((item) => (
+              <li key={item.description}>
                 <img src={item.imageUrl} alt={item.description} />
                 <span>{item.description}</span>
               </li>
@@ -28,5 +30,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  );
+  )
 }

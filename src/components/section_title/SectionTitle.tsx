@@ -1,4 +1,6 @@
-import './SectionTitle.css';
+import React from 'react'
+
+import './SectionTitle.css'
 
 interface SectionTitleProps {
   title: string;
@@ -11,5 +13,5 @@ export default function SectionTitle({ title, text }: SectionTitleProps) {
       <h2>{title}</h2>
       {text && <p>{text}</p>}
     </div>
-  );
+  )
 }

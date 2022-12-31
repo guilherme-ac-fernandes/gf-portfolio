@@ -14,6 +14,10 @@ import './App.css'
 // 1. Luá Octaviano (source: https://luaoctaviano.dev/)
 // 2. João Pedro Oliveira (source: https://jpoliveiramateus.vercel.app/)
 // 3. Ícaro Harry (source: https://icaro.io)
+
+// Estruturação do ESlint para React + TypeScript
+// source: https://andrebnassis.medium.com/setting
+// -eslint-on-a-react-typescript-project-2021-1190a43ffba
 function App() {
   return (
     <div>

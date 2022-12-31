@@ -1,13 +1,20 @@
+/* eslint-disable no-alert */
 import React from 'react'
 
 import { TypeAnimation } from 'react-type-animation'
+import { FaFileDownload } from 'react-icons/fa'
 import BigHeadComponent from '../big_head/BigHeadComponent'
+
 import './Introducion.css'
 
 const PHRASE = 'Eu programo'
 const SET_TIME = 2000
 
 export default function Introducion() {
+  const handleResume = () => {
+    alert('Função não implementada')
+  }
+
   return (
     <section id="introducion" className="introducion_container">
       <BigHeadComponent />
@@ -32,8 +39,13 @@ export default function Introducion() {
           repeat={Infinity}
           style={{ fontSize: '1.3rem' }}
         />
-        <button className="introducion_button" type="button">
-          Adicionar algo
+        <button
+          onClick={handleResume}
+          className="introducion_button"
+          type="button"
+        >
+          Currículo
+          <FaFileDownload />
         </button>
       </div>
     </section>

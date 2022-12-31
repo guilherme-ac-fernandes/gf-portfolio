@@ -44,6 +44,14 @@
   margin: 48px auto 0;
   color: var(--white);
   cursor: pointer;
+  display: flex;
+  gap: 15px;
+}
+
+.introducion_button:hover {
+  background-image: linear-gradient(#2967ff, #c523ff);
+
+  border: 2px solid var(--background-contrast);
 }
 
 @media screen and (max-width: 768px) {

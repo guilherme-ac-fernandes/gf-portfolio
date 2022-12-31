@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import logoDev from '../../images/logo-dev.png'
 
@@ -15,18 +15,6 @@ function Header() {
     setMenuState(!menuState)
   }
 
-  useEffect(() => {
-    const nav = document.querySelector<HTMLDivElement>('nav')
-
-    if (nav != null) {
-      if (menuState) {
-        nav.style.maxHeight = '100vh'
-      } else {
-        nav.style.maxHeight = ''
-      }
-    }
-  }, [menuState])
-
   return (
     <header>
       <a href="/" className="header_wrapper">
@@ -42,7 +30,7 @@ function Header() {
           )}
         </div>
       </div>
-      <nav>
+      <nav className={menuState ? 'openMenu' : ''}>
         <ul>
           <li><a onClick={toggleMenu} href="#about">Sobre</a></li>
           <li><a onClick={toggleMenu} href="#tools">Ferramentas</a></li>

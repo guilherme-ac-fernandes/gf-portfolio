@@ -42,35 +42,12 @@ function Header() {
           )}
         </div>
       </div>
-
       <nav>
         <ul>
-          <li>
-            <a onClick={toggleMenu} href="#about">
-              Sobre
-            </a>
-          </li>
-          <li>
-            <a onClick={toggleMenu} href="#tools">
-              Ferramentas
-            </a>
-          </li>
-          <li>
-            <a onClick={toggleMenu} href="#projects">
-              Projetos
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={toggleMenu}
-              href="#contact"
-              // href='https://www.linkedin.com/in/guilherme-ac-fernandes/'
-              // target='_blank'
-              // rel='noreferrer'
-            >
-              Contato
-            </a>
-          </li>
+          <li><a onClick={toggleMenu} href="#about">Sobre</a></li>
+          <li><a onClick={toggleMenu} href="#tools">Ferramentas</a></li>
+          <li><a onClick={toggleMenu} href="#projects">Projetos</a></li>
+          <li><a onClick={toggleMenu} href="#contact">Contato</a></li>
         </ul>
       </nav>
     </header>

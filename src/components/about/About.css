@@ -51,6 +51,12 @@
 }
 
 @media screen and (max-width: 500px) {
+  .about_container_content p {
+    font-size: 1.2rem;
+    padding: 16px;
+    line-height: 42px;
+  }
+  
   .about_container_content ul li {
     font-size: 1.1rem;
   }

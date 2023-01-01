@@ -43,7 +43,7 @@ const projects: Project[] = [
     module: 'backend',
   },
   {
-    name: 'Trybe Futebol Clube ⚽️🏆',
+    name: 'Futebol Clube ⚽️🏆',
     image: `${IMAGE_PATH}/tfc.png`,
     description:
       'A partir do FrontEnd criado pela Trybe, foi construído uma API para prover as informações de um site sobre partidas e classificações de futebol.',

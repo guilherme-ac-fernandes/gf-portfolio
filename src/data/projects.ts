@@ -105,6 +105,16 @@ const projects: Project[] = [
     module: 'backend',
   },
   {
+    name: 'DoctorCare 🩺🏥',
+    image: `${IMAGE_PATH}/nlw-return-origin.png`,
+    description:
+      'Consiste em uma aplicação fictícia de uma única página relacionada ao setor de saúde.',
+    skills: ['html', 'javascript', 'css'],
+    codeUrl: `${GITHUB_URL}/nlw-return-origin`,
+    deployUrl: 'https://guilherme-ac-fernandes.github.io/nlw-return-origin/',
+    module: 'frontend',
+  },
+  {
     name: 'App de Delivery 🍺🍸',
     image: `${IMAGE_PATH}/delivery-app.png`,
     description:
@@ -121,6 +131,15 @@ const projects: Project[] = [
       'docker',
     ],
     codeUrl: `${GITHUB_URL}/delivery-app`,
+    module: 'fullstack',
+  },
+  {
+    name: 'Bolão da Copa ⚽️🏆',
+    image: `${IMAGE_PATH}/nlw-copa-ignite.png`,
+    description:
+      'Consiste em uma aplicação web e mobile para criações de bolões para copa do mundo Catar 🇶🇦 2022.',
+    skills: ['react', 'node.js', 'react-native'],
+    codeUrl: `${GITHUB_URL}/nlw-copa-ignite`,
     module: 'fullstack',
   },
 ];

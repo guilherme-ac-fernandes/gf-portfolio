@@ -7,12 +7,20 @@
   align-items: center;
   display: flex;
   margin: 40px auto;
-  overflow-x: auto;
+  overflow-x: scroll;
   width: 90%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+
+
 
 @media screen and (max-width: 768px) {
   .tools_container_display {
     width: 100%
+  }
+
+  .tools_container_display::-webkit-scrollbar { 
+    display: none;
   }
 }

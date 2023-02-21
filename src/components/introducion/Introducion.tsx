@@ -2,16 +2,12 @@
 import React from 'react'
 import { FaFileDownload, FaLinkedinIn } from 'react-icons/fa'
 import BigHeadComponent from '../big_head/BigHeadComponent'
-import { LINKEDIN_LINK } from '../../data/links'
+import { LINKEDIN_LINK, RESUME_LINK } from '../../data/links'
 import Type from './Type'
 
 import './Introducion.css'
 
 export default function Introducion() {
-  const handleResume = () => {
-    alert('Função não implementada')
-  }
-
   return (
     <section id="introducion" className="introducion_container">
       <BigHeadComponent />
@@ -30,14 +26,16 @@ export default function Introducion() {
             Linkedin
             <FaLinkedinIn />
           </a>
-          <button
-            onClick={handleResume}
+
+          <a
             className="introducion_button"
-            type="button"
+            href={RESUME_LINK}
+            target="_blank"
+            rel="noreferrer"
           >
             Currículo
             <FaFileDownload />
-          </button>
+          </a>
         </aside>
       </div>
     </section>

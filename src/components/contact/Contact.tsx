@@ -1,6 +1,7 @@
 /* eslint-disable no-alert */
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import ReCAPTCHA from 'react-google-recaptcha'
 import SectionTitle from '../section_title/SectionTitle'
 
 import './Contact.css'
@@ -12,6 +13,7 @@ export default function Contact() {
   const [email, setEmail] = useState<string>('')
   const [message, setMessage] = useState<string>('')
   const [isDisable, setIsDisable] = useState<boolean>(true)
+  const recaptchaRef = useRef<ReCAPTCHA>()
 
   useEffect(() => {
     // Regex proveniente do projeto Delivery App do autor
@@ -29,8 +31,9 @@ export default function Contact() {
   // source: https://stackoverflow.com/questions/6899
   // 1527/using-emailjs-in-typescript-for-a-contact-
   // form-argument-of-type-eventtarget-i
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    const data = e.currentTarget
 
     const {
       REACT_APP_EMAILJS_SERVICE,
@@ -38,21 +41,29 @@ export default function Contact() {
       REACT_APP_EMAILJS_PUBLIC_KEY,
     } = process.env
 
-    emailjs.sendForm(
-      REACT_APP_EMAILJS_SERVICE as string,
-      REACT_APP_EMAILJS_TEMPLATE as string,
-      e.currentTarget,
-      REACT_APP_EMAILJS_PUBLIC_KEY as string,
-    )
-      .then((result) => {
-        alert('Email enviado com sucesso!')
-        console.log(result.text)
-      }, (error) => {
-        alert('Erro: entre em contato pelo LinkedIn')
-        console.log(error.text)
-      })
+    // Utilização do ReCAPTCHA proveniente da dica do instrutor
+    // da Trybe Zambelli e aplicação baseada no exemplo presente
+    // no Stack OverFlow
+    // source: https://stackoverflow.com/questions/
+    // 67385805/react-google-recaptcha-ref-type-err
+    // or-in-react-typescript
+    const token = await recaptchaRef?.current?.executeAsync()
+    if (token) {
+      emailjs.sendForm(
+        REACT_APP_EMAILJS_SERVICE as string,
+        REACT_APP_EMAILJS_TEMPLATE as string,
+        data,
+        REACT_APP_EMAILJS_PUBLIC_KEY as string,
+      )
+        .then((result) => {
+          alert('Email enviado com sucesso!')
+          console.log(result.text)
+        }, (error) => {
+          alert('Erro: entre em contato pelo LinkedIn')
+          console.log(error.text)
+        })
+    }
 
-    e.currentTarget.reset()
     setName('')
     setEmail('')
     setMessage('')
@@ -87,6 +98,11 @@ export default function Contact() {
           value={message}
           name="message"
           onChange={({ target: { value } }) => setMessage(value)}
+        />
+        <ReCAPTCHA
+          sitekey={process.env.REACT_APP_SITE_KEY as string}
+          ref={recaptchaRef as React.RefObject<ReCAPTCHA>}
+          size="invisible"
         />
         <input
           disabled={!isDisable}

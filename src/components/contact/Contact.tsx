@@ -32,11 +32,17 @@ export default function Contact() {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
+    const {
+      REACT_APP_EMAILJS_SERVICE,
+      REACT_APP_EMAILJS_TEMPLATE,
+      REACT_APP_EMAILJS_PUBLIC_KEY,
+    } = process.env
+
     emailjs.sendForm(
-      'service_273gvok',
-      'template_n9qgsl8',
+      REACT_APP_EMAILJS_SERVICE as string,
+      REACT_APP_EMAILJS_TEMPLATE as string,
       e.currentTarget,
-      'U00LEqsFmiQKy8iqX',
+      REACT_APP_EMAILJS_PUBLIC_KEY as string,
     )
       .then((result) => {
         alert('Email enviado com sucesso!')

@@ -1,5 +1,6 @@
 import React from 'react'
 import tools from '../../data/tools'
+
 import SectionTitle from '../section_title/SectionTitle'
 import ToolsDisplay from '../tools_display/ToolsDisplay'
 
@@ -17,6 +18,7 @@ export default function Tools() {
           <ToolsDisplay tool={tool} key={tool.name} />
         ))}
       </div>
+
     </section>
   )
 }

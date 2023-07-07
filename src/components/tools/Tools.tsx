@@ -18,7 +18,6 @@ export default function Tools() {
           <ToolsDisplay tool={tool} key={tool.name} />
         ))}
       </div>
-
     </section>
   )
 }
